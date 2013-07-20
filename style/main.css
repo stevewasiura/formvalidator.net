@@ -1,0 +1,326 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:  'Abel', "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h2, h1 {
+    font-size: 43px;
+    color: #555;
+    padding-bottom: 12px;
+}
+
+h1.front-page {
+    font-size: 56px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.navbar,
+.navbar-inverse .brand,
+.navbar-inverse .navbar-inner {
+    background-color: #4185ad !important;
+    background-image: none;
+    border: 0;
+    text-shadow: none !important;
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .top-menu {
+    font-family: 'Abel', Helvetica, serif;
+}
+
+/* Mozilla can't handle the font with rgba color :( */
+@-moz-document url-prefix() {
+  .navbar-inverse .navbar-inner .top-menu a {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+
+    #download-info {
+        display: none;
+        overflow: hidden;
+        clear:both;
+    }
+
+    #download-info a {
+        color: #FFF;
+        text-decoration: underline;
+    }
+
+    #download-info a:hover {
+        text-decoration: none;
+    }
+
+    #download-info .inner {
+        border:4px double #FFF;
+        padding: 4px 18px 8px;
+        margin-top: 18px;
+    }
+
+    #download-info li {
+        color: #FFF;
+    }
+
+    #download-info h3 {
+        padding-top: 0;
+        color: #FFF;
+    }
+
+#logo {
+    color: #F9F9F9;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+
+p {
+    line-height: 160%;
+    margin-bottom: 12px;
+}
+
+input {
+    border: #CCC solid 1px;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#content {
+    padding-top: 60px;
+    overflow: auto;
+    clear: both;
+}
+
+.control-label em {
+    font-size: 90%;
+    display: block;
+    color: #888;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav .arr {
+    position: absolute;
+    right: 6px;
+}
+
+a.active .arr {
+    color: #FFF !important;
+}
+
+#submenu-container {
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.submenu {
+    padding-bottom: 10px;
+}
+
+.submenu li {
+    padding-top: 7px;
+}
+
+.nav-list>.active>a, .nav-list>.active>a:hover {
+    background-color: #4185ad;
+}
+
+.brand {
+    float: left;
+}
+
+.top-menu {
+    float: right;
+}
+
+    .top-menu a {
+        display: block;
+        float: left;
+        padding: 8px 22px;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(255,255,255, .8);
+        border: rgba(255,255,255, .2) solid 1px;
+        border-width: 0 1px;
+        border-right-color: rgba(0,0,0, .2);
+    }
+
+    .top-menu a i {
+        opacity: 0.8;
+        vertical-align: -2px;
+    }
+
+    .top-menu a:hover,
+    .top-menu a.active,
+    .top-menu a:hover i,
+    .top-menu a.active i {
+        color: #FFF;
+        opacity: 1;
+        text-decoration: none;
+    }
+
+    .top-menu a:first-child {
+        border-left: 0;
+    }
+
+    .top-menu a:last-child {
+        border-right: 0;
+    }
+
+
+#home img {
+    float: right;
+    width: 220px;
+    margin:12px 22px 12px 22px;
+}
+
+
+#footer p {
+    color: #999;
+    position: relative;
+}
+
+#footer a:link,
+#footer a:visited {
+    color: #999;
+    text-decoration: underline;
+}
+
+#footer a:hover,
+#footer a:active {
+    color: #777;
+    text-decoration: none;
+}
+
+#footer hr {
+    clear: both;
+    margin-top: 32px;
+}
+
+#to-the-top {
+    position: absolute;
+    right: 8px;
+}
+
+/* Form validator */
+
+span.form-error {
+    display: block !important;
+    float: none;
+    font-size: 85% !important;
+    color: red;
+    padding-top: 4px;
+}
+
+div.form-error {
+    padding: 6px 12px;
+    line-height: 180%;
+    background: #ffe5ed;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    color: darkred;
+}
+
+input.valid {
+    background: url(../img/icon-ok.png) no-repeat right center #e3ffe5;
+    color: #002f00;
+    border-color: #96b796 !important;
+}
+
+input.error {
+    background: url(../img/icon-fail.png) no-repeat right center #ffebef;
+    color: #480000;
+}
+
+.form-suggest-element {
+    padding: 4px;
+}
+
+form.validating-backend {
+    background: url(../img/ajax-loader.gif) no-repeat center center;
+}
+
+form.validating-backend div {
+    opacity: 0.5;
+}
+
+.max-chars {
+    background: #EEE;
+    color: #999;
+}
+
+.form-help {
+    padding-left: 6px;
+    font-size: 90%;
+    color: #888;
+}
+
+
+
+/* prettify */
+
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+    font-size: 11px;
+    padding: 8px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 20px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.prettyprint {
+    margin-top: 22px;
+}
+.convert-code {
+    display: none;
+}
+
+.pre-title {
+    margin-bottom: -12px;
+}
+
+/* Pages */
+
+.page {
+    display: none;
+}
