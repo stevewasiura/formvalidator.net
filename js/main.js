@@ -170,6 +170,7 @@ $('.page').fadeOut('fast');
 
 var $subMenus = $('.submenu'),
     $menuLinks = $('.nav a'),
+    SAVE_STATS = (!window.localStorage || window.localStorage.getItem('no-stats') != '1') && window.location.href.indexOf('localhost') == -1;
     $subMenuLinks = $('.menu-link');
 
 /*
@@ -178,8 +179,8 @@ var $subMenus = $('.submenu'),
 $(window).on('hashchange', function() {
 
     // Track page view
-    if( typeof ga == 'function' && (!window.localStorage || window.localStorage.getItem('0') != '1') ) {
-        console.log(ga('send', 'pageview', window.location.pathname + window.location.search + window.location.hash));
+    if( typeof ga == 'function' && SAVE_STATS ) {
+        ga('send', 'pageview', window.location.pathname + window.location.search + window.location.hash);
     }
 
     return Pager.goTo(window.location.hash.substr(1), function() {
